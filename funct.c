@@ -31,7 +31,7 @@ void prompt(void)
 {
 	if (isatty(STDIN_FILENO))
 	{
-		write(1, ":) ", 3);
+		write(1, "#cisfun$ ", 9);
 	}
 }
 
