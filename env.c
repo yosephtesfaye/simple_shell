@@ -26,7 +26,7 @@ unsigned int find_num_dir(char *path)
 }
 
 /**
- * store_e_variables - Function that create a double pointer array, where stores
+ * store_e_variables - Function that create a double pointer array
  *each path directory as a pointer
  *@fir_com: first command inserted in the prompt
  *@environ: enviroment variables
