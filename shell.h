@@ -11,6 +11,7 @@
 #include <sys/wait.h>
 #include <sys/stat.h>
 
+
 /*main.c*/
 void INThandler(int sig);
 void print_dollar(void);
@@ -53,5 +54,9 @@ void null_command(char *buffer);
 void get_out(char *buffer, char **commands);
 void env_end(char *buffer, char **commands, char **env);
 void _path(char **commands, char *buffer, char **env, char **argv, int count);
+
+char **strtok_commands(char *tmp, char *delm);
+void delim_sorter(char *tmp, char **pholder, char *delm, unsigned int *i, int *j, unsigned int *k);
+void _strcpy(char *s1, char *s2);
 
 #endif /*SHELL.H*/
