@@ -37,7 +37,8 @@ char **array_strtok(char *str)
 	unsigned int length;
 	int i = 0;
 
-	str[_strlen(str) - 1] = '\0'; /**replace the new line by null*/
+	/*str[_strlen(str) - 1] = '\0';  - replace the new line by null.
+	This line has been placed at main function on string buffer*/
 	length = length_of_command(str);
 	if (length == 0)
 		return (NULL);
